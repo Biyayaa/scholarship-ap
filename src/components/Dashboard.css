@@ -1,67 +1,127 @@
-/* src/components/Dashboard.css */
 .dashboard-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dashboard-container h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .dashboard-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-  }
-  
-  .subject-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .subject-group label {
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  .subject-group select {
-    flex: 2;
-  }
-  
-  .submit-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #0056b3;
-  }
-  
+  padding: 20px;
+}
+
+.scholarship-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.scholarship-percentage {
+  font-size: 24px;
+  color: green;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.subject-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.subject-group label {
+  margin-right: 10px;
+}
+
+.dashboard-form input,
+.dashboard-form select,
+.dashboard-form textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.dashboard-form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-form button:hover {
+  background-color: #45a049;
+}
+
+.dashboard-form input[readonly] {
+  background-color: #f0f0f0;
+}
+
+.dashboard-form input[disabled] {
+  background-color: #f0f0f0;
+}
+
+.application-card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.application-card i {
+  font-size: 50px;
+}
+
+.application-card p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.scholarship-percentage {
+  text-align: center;
+  font-size: 24px;
+  color: green;
+  margin-top: 20px;
+}

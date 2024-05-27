@@ -1,27 +1,80 @@
-/* src/components/AdminDashboard.css */
 .admin-dashboard-container {
-    padding: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  tr:hover {
-    background-color: #f1f1f1;
-  }
-  
+  padding: 20px;
+}
+
+.applications-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.application-card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.application-card i {
+  font-size: 50px;
+}
+
+.application-card p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.scholarship-percentage {
+  text-align: center;
+  font-size: 24px;
+  color: green;
+  margin-top: 20px;
+}
